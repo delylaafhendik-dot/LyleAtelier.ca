@@ -5,8 +5,8 @@
 // Configuration Telegram Bot untuk Notifikasi ke Device
 // (Opsional: Masukkan BOT TOKEN & CHAT ID Telegram Anda untuk menerima notifikasi)
 const TELEGRAM_CONFIG = {
-    botToken: "YOUR_TELEGRAM_BOT_TOKEN", // Contoh: "7123456789:ABCdefGHIjklMNOpqrsTUVwxyz"
-    chatId: "YOUR_TELEGRAM_CHAT_ID"     // Contoh: "123456789"
+    botToken: "8871039350:AAHwK4N7tOGS7gOUVb1IhkNvBes9aQIgzSw", // Contoh: "7123456789:ABCdefGHIjklMNOpqrsTUVwxyz"
+    chatId: "8871039350"     // Contoh: "123456789"
 };
 
 // Data Produk Lylé Atelier (High-End & Coquette Fashion)
