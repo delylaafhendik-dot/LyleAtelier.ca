@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lylé Atelier — High-End Coquette Boutique</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span>🎀 Welcome to Lylé Atelier — Free Worldwide Express Shipping on Orders Over $500 🎀</span>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+                <nav class="nav-links">
+                    <a href="#hero">Beranda</a>
+                    <a href="#catalog">Koleksi</a>
+                    <a href="#about">Tentang Kami</a>
+                    <a href="#contact">Kontak</a>
+                </nav>
+            </div>
+
+            <div class="brand-logo">
+                <a href="#">
+                    <span class="logo-subtitle">Maison de Couture</span>
+                    <h1 class="logo-title">Lylé Atelier</h1>
+                    <span class="logo-deco">✦ 🎀 ✦</span>
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Cari gaun, sepatu, make up...">
+                </div>
+                <button class="icon-btn" id="userBtn" title="Akun Saya">
+                    <i class="fa-regular fa-user"></i>
+                    <span id="userStatusText" class="user-status-tag">Login</span>
+                </button>
+                <button class="icon-btn cart-btn" id="cartBtn" title="Keranjang">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">✨ High-End Luxury & Romantic Aesthetics ✨</span>
+            <h2>Coquette Dreamscape</h2>
+            <p>Sentuhan kemewahan feminin, renda sutra berkualitas tinggi, dan keanggunan abadi untuk butik impian Anda.</p>
+            <div class="hero-buttons">
+                <a href="#catalog" class="btn btn-primary">Jelajahi Koleksi 🎀</a>
+                <a href="#about" class="btn btn-secondary">Kisah Lylé Atelier</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Categories -->
+    <section class="catalog-section" id="catalog">
+        <div class="section-title">
+            <span class="sub-title">🎀 Curated Fashion & Beauty 🎀</span>
+            <h2>Koleksi Eksklusif Lylé Atelier</h2>
+            <div class="divider"><span>❦</span></div>
+        </div>
+
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">Semua Koleksi</button>
+            <button class="filter-btn" data-category="baju">Baju & Gaun</button>
+            <button class="filter-btn" data-category="rok">Rok & Celana</button>
+            <button class="filter-btn" data-category="sepatu">Sepatu High Heels</button>
+            <button class="filter-btn" data-category="kacamata">Kacamata Luxe</button>
+            <button class="filter-btn" data-category="makeup">Make Up & Beauty</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="product-grid" id="productGrid">
+            <!-- Products injected by JS -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-card">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Lylé Atelier Aesthetic">
+            </div>
+            <div class="about-text">
+                <span class="sub-title">Filosofi Kami</span>
+                <h2>Seni Keanggunan Coquette</h2>
+                <p><strong>Lylé Atelier</strong> menghadirkan keindahan estetika vintage-romantic berpADU kemewahan modern. Setiap gaun, pasang sepatu, hingga palet make up dipilih langsung dari desainer butik ternama dunia.</p>
+                <p>Kami percaya bahwa setiap detail—dari pita satin lembut hingga kilau renda sutra—adalah bentuk ekspresi cinta pada diri sendiri.</p>
+                <div class="signature">Lylé Atelier Paris & Jakarta</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Lylé Atelier</h3>
+                <p>Butik Fashion & Beauty High-End dengan Sentuhan Aestetic Coquette & Soft Pastel.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#catalog">Haute Couture Dresses</a></li>
+                    <li><a href="#catalog">Coquette Shoes & Heels</a></li>
+                    <li><a href="#catalog">Eyewear Collection</a></li>
+                    <li><a href="#catalog">Luxe Pastel Beauty</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Layanan Pelanggan</h4>
+                <ul>
+                    <li><a href="#">Konsultasi Style VIP</a></li>
+                    <li><a href="#">Panduan Ukuran</a></li>
+                    <li><a href="#">Kebijakan Pengembalian</a></li>
+                    <li><a href="#">Hubungi Butik</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Langganan Newsletter</h4>
+                <p>Dapatkan undangan privat untuk koleksi terbatas Lylé Atelier.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Anda...">
+                    <button class="btn btn-primary">Gabung</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lylé Atelier. All Rights Reserved. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-card">
+            <button class="close-modal" id="closeLogin">&times;</button>
+            <div class="modal-header">
+                <span class="modal-icon">🎀</span>
+                <h3>Login VIP Member</h3>
+                <p>Masuk untuk mendapatkan akses eksklusif & notifikasi langsung ke device Anda.</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email / Username VIP</label>
+                    <input type="email" id="loginEmail" placeholder="nama@lyle-atelier.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Kata Sandi</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••" required>
+                </div>
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Ingat Saya di Perangkat Ini</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fa-solid fa-lock"></i> Masuk Sekarang
+                </button>
+            </form>
+            <div class="modal-footer">
+                <p>Belum memiliki akun? <a href="#" id="toggleSignup">Daftar Member Baru</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar Modal -->
+    <div class="cart-sidebar-overlay" id="cartOverlay">
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h3>Keranjang Belanja 🛍️</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-body" id="cartBody">
+                <!-- Cart items dynamically added -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total Pembayaran:</span>
+                    <strong id="cartTotalAmount">Rp 0</strong>
+                </div>
+                <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout VIP Order 🎀</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
